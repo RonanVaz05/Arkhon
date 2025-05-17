@@ -1,0 +1,12 @@
+# Build artifacts
+obj/
+arkhons_awakening
+
+# Save files
+savegame.dat
+savegame_*.dat
+
+# OS-specific files
+.DS_Store
+*.swp
+*.swo 
