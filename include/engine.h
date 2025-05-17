@@ -18,19 +18,18 @@ typedef struct Command command_t;
 // story.h and save.h might not be directly needed in game_t itself
 // but are used by functions that take game_t*
 
-struct Game {
-    World world;
-    Player player;
-    game_state_t state; // Current state of the game (e.g., RUNNING, GAME_OVER)
-    // Potentially other global game flags or states
-};
-
 // Game states (example)
 typedef enum {
     GAME_RUNNING,
     GAME_OVER
 } game_state_t;
 
+struct Game {
+    World world;
+    Player player;
+    game_state_t state; // Current state of the game (e.g., RUNNING, GAME_OVER)
+    // Potentially other global game flags or states
+};
 
 // Placeholder for command_t structure
 // This will be defined more concretely, likely in engine.c or a shared types.h
